@@ -1,0 +1,24 @@
+const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/webp" href="/images/logo.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>St Tropez Guesthouse | Luxury B&B in QwaQwa near Golden Gate</title>
+    <meta name="description" content="Book your stay at St Tropez Guesthouse — premium bed and breakfast accommodation in the heart of QwaQwa, Free State. Near Golden Gate Highlands National Park." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://st-tropez-stay.base44.app" />
+    <meta property="og:title" content="St Tropez Guesthouse | Luxury B&B in QwaQwa near Golden Gate" />
+    <meta property="og:description" content="Book your stay at St Tropez Guesthouse — premium bed and breakfast accommodation in the heart of QwaQwa, Free State. Near Golden Gate Highlands National Park." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://st-tropez-stay.base44.app" />
+    <meta property="og:image" content="https://st-tropez-stay.base44.app/images/guesthouse-exterior.webp" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
